@@ -42,7 +42,7 @@ public class Exercicio10 {
         for(int i = 0; i < numeros.size(); i++){
             ans += numeros.get(i);
         }
-        System.out.println("\n\nValor da média entre os vetores: " + ans/numeros.size());
+        System.out.println("\n\nValor da média entre os valores do ArrayList: " + ans/numeros.size());
 
         //g) Encontrar e mostrar o maior e o menor valores do ArrayList 
         int maior, menor;
@@ -98,7 +98,10 @@ public class Exercicio10 {
         }
 
         //m) Solicitar um valor ao usuário e verificar se esse valor existe no ArrayList. Se existir exibir a posição em que ele está, senão exibir uma mensagem de valor não encontrado 
-        System.out.println("\nEscolha um número para averiguar sua existência: ");
+        // NOTA DE ESTUDO: No mercado de trabalho, poderíamos substituir todo esse laço 'for' 
+        // pelos métodos nativos 'numeros.contains(escolhido)' e 'numeros.indexOf(escolhido)', 
+        // mas a busca manual foi feita aqui para treinar a lógica de programação.
+        System.out.print("\nEscolha um número para averiguar sua existência: ");
         boolean resposta = false;
         int escolhido = s.nextInt();
         for(int i = 0; i < numeros.size(); i++){
