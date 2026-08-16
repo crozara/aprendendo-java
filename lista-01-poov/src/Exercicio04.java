@@ -7,6 +7,7 @@ public class Exercicio04 {
         System.out.print("Digite um número e descubra todos os primos até ele: ");
         int cont = 0;
         int limite = s.nextInt();
+        boolean flag = false;
 
         for(int i = 2; i <= limite; i++){
             cont = 0;
@@ -21,7 +22,12 @@ public class Exercicio04 {
             }
             if(cont == 2){
                 System.out.print(i + " ");
+                flag = true;
             }
+        }
+
+        if(!flag){
+            System.out.println("Nenhum primo foi encontrado neste intervalo.");
         }
         
         System.out.println();
