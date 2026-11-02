@@ -11,4 +11,18 @@ public class Temperatura {
         this.graus = novosGraus;
         this.escala = novaEscala;
     }
+
+    //Apenas retirando o aviso de never used (não fazia parte do exercicio):
+    public double getGraus() {
+        return graus;
+    }
+    public void setGraus(double graus) {
+        this.graus = graus;
+    }
+    public int getEscala() {
+        return escala;
+    }
+    public void setEscala(int escala) {
+        this.escala = escala;
+    }
 }
