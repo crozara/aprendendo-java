@@ -1,9 +1,9 @@
 package principal;
 import java.math.BigDecimal;
 
-import modelo.Administradores;
-import modelo.Executivos;
-import modelo.Medicos;
+import modelo.ex06_sanitas.Administradores;
+import modelo.ex06_sanitas.Executivos;
+import modelo.ex06_sanitas.Medicos;
 
 
 public class AppFuncionario {

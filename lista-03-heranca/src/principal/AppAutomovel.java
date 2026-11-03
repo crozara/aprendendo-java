@@ -1,9 +1,9 @@
 package principal;
 import java.util.ArrayList;
 
-import modelo.AutomovelBasico;
-import modelo.AutomovelLuxo;
-import modelo.TipoMotor;
+import modelo.ex02_autotech.AutomovelBasico;
+import modelo.ex02_autotech.AutomovelLuxo;
+import modelo.ex02_autotech.TipoMotor;
 
 public class AppAutomovel {
     public static void main(String[] args) {

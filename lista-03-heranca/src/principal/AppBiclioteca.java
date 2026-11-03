@@ -3,10 +3,10 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import modelo.Livro;
-import modelo.MidiasDigitais;
-import modelo.RecorrenciaPublicacao;
-import modelo.Revista;
+import modelo.ex05_biblioteca.Livro;
+import modelo.ex05_biblioteca.MidiasDigitais;
+import modelo.ex05_biblioteca.RecorrenciaPublicacao;
+import modelo.ex05_biblioteca.Revista;
 
 public class AppBiclioteca {
     public static void main(String[] args) {

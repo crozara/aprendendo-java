@@ -2,9 +2,9 @@ package principal;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-import modelo.CategoriaCulinaria;
-import modelo.Restaurante;
-import modelo.Supermercados;
+import modelo.ex04_rangorapido.CategoriaCulinaria;
+import modelo.ex04_rangorapido.Restaurante;
+import modelo.ex04_rangorapido.Supermercados;
 
 public class AppEstabelecimento {
     public static void main(String[] args) {

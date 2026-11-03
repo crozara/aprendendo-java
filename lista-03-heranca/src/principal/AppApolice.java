@@ -3,9 +3,9 @@ package principal;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-import modelo.ApoliceApartamento;
-import modelo.ApoliceEnfermaria;
-import modelo.Pessoa;
+import modelo.ex07_vidasegura.ApoliceApartamento;
+import modelo.ex07_vidasegura.ApoliceEnfermaria;
+import modelo.ex07_vidasegura.Pessoa;
 
 public class AppApolice {
     public static void main(String[] args) {

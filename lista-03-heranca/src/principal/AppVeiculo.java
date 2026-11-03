@@ -3,9 +3,9 @@ package principal;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-import modelo.Caminhao;
-import modelo.Carro;
-import modelo.Cor;
+import modelo.ex03_frota.Caminhao;
+import modelo.ex03_frota.Carro;
+import modelo.ex03_frota.Cor;
 
 public class AppVeiculo {
     public static void main(String[] args) {

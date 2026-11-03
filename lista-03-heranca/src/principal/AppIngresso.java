@@ -2,9 +2,9 @@ package principal;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-import modelo.IngressoMeiaEntrada;
-import modelo.IngressoNormal;
-import modelo.IngressoVip;
+import modelo.ex01_ingressos.IngressoMeiaEntrada;
+import modelo.ex01_ingressos.IngressoNormal;
+import modelo.ex01_ingressos.IngressoVip;
 
 public class AppIngresso {
     public static void main(String[] args) {
