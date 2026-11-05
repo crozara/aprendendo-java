@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 
 public abstract class Empregado {
     private final String nome;
-    private final int INSS;
+    private final String INSS;
 
-    public Empregado(String nome, int iNSS) {
+    public Empregado(String nome, String iNSS) {
         this.nome = nome;
         INSS = iNSS;
     }
@@ -17,7 +17,7 @@ public abstract class Empregado {
         return nome;
     }
 
-    public int getINSS() {
+    public String getINSS() {
         return INSS;
     }
 }

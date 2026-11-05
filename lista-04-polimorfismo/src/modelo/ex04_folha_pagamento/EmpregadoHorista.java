@@ -7,10 +7,10 @@ public class EmpregadoHorista extends Empregado {
     private final BigDecimal taxaRemuneracao;
     private double horasTrabalhadas;
 
-    public EmpregadoHorista(String nome, int iNSS, BigDecimal taxaRemuneracao, double horasTrabalhadas) {
+    public EmpregadoHorista(String nome, String iNSS, BigDecimal taxaRemuneracao) {
         super(nome, iNSS);
         this.taxaRemuneracao = taxaRemuneracao;
-        this.horasTrabalhadas = horasTrabalhadas;
+        this.horasTrabalhadas = 0;
     }
     
     @Override
