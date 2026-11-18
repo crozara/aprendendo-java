@@ -1,7 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import modelo.*;
+import ex01_lotacao_academica.modelo.*;
+import modelo.Carga;
+import modelo.CargaFarmaceutica;
+import modelo.CargaQuimicaPerigosa;
+import modelo.CargaRefrigerada;
+import modelo.InspetoriaSanitaria;
+import modelo.PrioridadeLogistica;
+import modelo.TerminalEletrico;
 
 public class App {
     public static void main(String[] args) throws Exception {

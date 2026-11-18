@@ -1,4 +1,4 @@
-package modelo;
+package ex01_lotacao_academica.modelo;
 
 import java.util.ArrayList;
 import java.util.List;

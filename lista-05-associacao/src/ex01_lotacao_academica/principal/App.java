@@ -1,10 +1,10 @@
-package principal;
+package ex01_lotacao_academica.principal;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import modelo.Aluno;
-import modelo.Professor;
+import ex01_lotacao_academica.modelo.Aluno;
+import ex01_lotacao_academica.modelo.Professor;
 
 public class App {
     public static void main(String[] args) throws Exception {
