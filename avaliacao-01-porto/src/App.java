@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import ex01_lotacao_academica.modelo.*;
+
 import modelo.Carga;
 import modelo.CargaFarmaceutica;
 import modelo.CargaQuimicaPerigosa;
