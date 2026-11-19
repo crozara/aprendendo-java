@@ -1,18 +1,34 @@
-## Getting Started
+# 🔗 Lista 05 — Associação, Agregação e Composição
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Exercícios práticos de modelagem de relacionamentos entre objetos em Java (POOV).
 
-## Folder Structure
+## 📂 Exercícios
+* **`ex01_lotacao_academica`:** Associação Unidirecional (`Professor` -> `Aluno`).
+* **`ex02_auditoria_mec`:** Associação Bidirecional (`Professor` <-> `Aluno`) com sincronização de referências.
+* **`ex03_catalogo_editora:`** Associação / Agregação Unidirecional (Autor -> Livro) com menu interativo e busca por CPF/ISBN.
+* **`ex04_nota_fiscal`:** Composição Estrita (`NotaFiscal`, `EnderecoFaturamento` e `ItemNotaFiscal`) com cópia defensiva.
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🧠 Resumo: Agregação vs. Composição no Código
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+| Critério | Agregação | Composição |
+| :--- | :--- | :--- |
+| **Onde fica o `new` da Parte?** | Fora (no `App` ou outra classe) | Exclusivamente dentro do Todo |
+| **Parâmetro no Construtor/Método** | Recebe o **objeto pronto** | Recebe **dados primitivos** |
+| **Getter da Parte** | Retorna a referência direta | Retorna **cópia defensiva** (clone) ou não existe |
+| **Setter da Parte** | Permitido | Proibido |
+| **Se o Todo morrer** | A Parte continua existindo | A Parte morre junto |
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Exemplo Prático (`NotaFiscal`)
 
-## Dependency Management
+```java
+// COMPOSIÇÃO (NotaFiscal cria o endereço internamente)
+public NotaFiscal(int numero, String cliente, String rua, int numeroCasa, String cidade) {
+    this.endereco = new EnderecoFaturamento(rua, numeroCasa, cidade);
+}
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+// AGREGAÇÃO (NotaFiscal recebe o endereço já pronto de fora)
+public NotaFiscal(int numero, String cliente, EnderecoFaturamento endereco) {
+    this.endereco = endereco;
+}
