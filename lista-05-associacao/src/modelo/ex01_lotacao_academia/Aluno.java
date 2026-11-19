@@ -1,4 +1,4 @@
-package ex01_lotacao_academica.modelo;
+package modelo.ex01_lotacao_academia;
 
 public class Aluno {
     private final String nome;

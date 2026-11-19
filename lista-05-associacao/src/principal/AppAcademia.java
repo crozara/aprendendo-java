@@ -1,12 +1,12 @@
-package ex01_lotacao_academica.principal;
+package principal;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ex01_lotacao_academica.modelo.Aluno;
-import ex01_lotacao_academica.modelo.Professor;
+import modelo.ex01_lotacao_academia.Aluno;
+import modelo.ex01_lotacao_academia.Professor;
 
-public class App {
+public class AppAcademia {
     public static void main(String[] args) throws Exception {
         List<Professor> professores = new ArrayList<Professor>();
         List<Aluno> alunos =  new ArrayList<Aluno>();

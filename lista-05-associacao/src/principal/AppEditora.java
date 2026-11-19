@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import modelo.Autor;
-import modelo.Livro;
+import modelo.ex03_catalogo_editora.Autor;
+import modelo.ex03_catalogo_editora.Livro;
 
-public class App {
+public class AppEditora {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
         List<Livro> livros = new ArrayList<Livro>();

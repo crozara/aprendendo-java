@@ -1,4 +1,4 @@
-package modelo;
+package modelo.ex03_catalogo_editora;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package modelo;
+package modelo.ex03_catalogo_editora;
 
 public class Livro {
     private final String titulo;
